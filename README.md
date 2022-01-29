@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Here I try to Automated Sharp Archive Web-automation test project. In this project work with Selenium Web-Driver, Juint test runner on java language.
 
 **Technology:**
@@ -32,3 +33,9 @@ Home Feeds Cheek,
 Login_Home_Archive_All function CheekUp,**
 
 
+=======
+# Selenium_Junit_Java_sharp_Archive
+Web-automation test project. In this project work with Selenium Web-Driver, Juint test runner on java language.
+
+
+>>>>>>> 10db45cebd473c6c4e7826be8737ec6fc9cbbad3
