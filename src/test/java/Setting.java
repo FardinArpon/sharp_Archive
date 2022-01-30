@@ -33,7 +33,7 @@ public class Setting extends SetUp {
         WebElement mainMenu = driver.findElement(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[1]/div[1]/div[2]/div[3]"));
         Actions actions = new Actions(driver);
         actions.moveToElement(mainMenu).perform();
-        //Thread.sleep(3000);
+        Thread.sleep(3000);
 
         WebElement subMenu = driver.findElement(By.xpath("//p[contains(text(),'Archive')]"));
         WebElement subMenu2 = driver.findElement(By.xpath("//p[contains(text(),'Search')]"));
@@ -94,9 +94,10 @@ public class Setting extends SetUp {
         //--------------------Account-------------------------//
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div/div[1]/div[2]/div/div[1]"))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div/div[2]/section/div[1]/div[2]/div[3]/div/button[3]"))).click();
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[7]/div/div/div[2]/table/tbody/tr/td[2]/svg/path"))).click();
-
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div/div[2]/section/div[1]/div[2]/div[3]/div/button[3]"))).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[7]/div/div/div[2]/table/tbody/tr/td[2]/svg/path"))).click();
+//
 
 
 

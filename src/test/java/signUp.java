@@ -18,7 +18,7 @@ public class signUp extends SetUp {
        wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='first_name']"))).sendKeys("Fardin");
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='last_name']"))).sendKeys("Arpon");
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("a10079@gmail.com");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("a1123@gmail.com");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#password"))).sendKeys("DevXhub12345@");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#business_name"))).sendKeys("DevXHubzone");
         wait.until(ExpectedConditions.elementToBeClickable(By.tagName("select"))).click();

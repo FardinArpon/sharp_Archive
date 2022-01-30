@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Archive extends SetUp {
@@ -35,23 +36,33 @@ public class Archive extends SetUp {
 //------------------------------Archive---------------------------//
 
 
-       WebElement mainMenu = driver.findElement(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[1]/div[1]/div[2]/div[3]"));
-       Actions actions = new Actions(driver);
-       actions.moveToElement(mainMenu).perform();
-       WebElement subMenu = driver.findElement(By.xpath("//p[contains(text(),'Archive')]"));
-       actions.moveToElement(subMenu);
-       actions.click().build().perform();
-       Thread.sleep(3000);
+        WebElement mainMenu = driver.findElement(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[1]/div[1]/div[2]/div[3]"));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(mainMenu).perform();
+        Thread.sleep(3000);
+
+        WebElement subMenu2 = driver.findElement(By.xpath("//p[contains(text(),'Archive')]"));
+        actions.moveToElement(subMenu2);
+        actions.click().build().perform();
+        Thread.sleep(3000);
+
+
 
        //Source
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#source"))).click();
-       Thread.sleep(2000);
+        Select option4 = new Select(driver.findElement(By.cssSelector("#source")));
+        option4.selectByValue("Twitter");
+        Thread.sleep(1000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#group"))).click();
-        Thread.sleep(2000);
+        Select option1 = new Select(driver.findElement(By.cssSelector("#group")));
+        option1.selectByValue("@@@@@@@@@@");
+        Thread.sleep(1000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#name"))).click();
-        Thread.sleep(2000);
+        Select option2 = new Select(driver.findElement(By.cssSelector("#name")));
+        option2.selectByValue("TDevxhub");
+        Thread.sleep(1000);
 
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/strong[1]"))).click();
@@ -76,5 +87,9 @@ public class Archive extends SetUp {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']"))).sendKeys(Keys.ENTER);
         Thread.sleep(2000);
 
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div/div[1]/div[2]/button[2]/span"))).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='checkmark']"))).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).click();
+//        Thread.sleep(2000);
     }
 }
