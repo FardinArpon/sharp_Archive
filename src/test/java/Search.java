@@ -67,5 +67,6 @@ public class Search extends SetUp{
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div/div/button[2]"))).click();
         Thread.sleep(30000);
+
     }
 }

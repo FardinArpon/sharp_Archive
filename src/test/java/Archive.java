@@ -56,40 +56,38 @@ public class Archive extends SetUp {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#group"))).click();
         Select option1 = new Select(driver.findElement(By.cssSelector("#group")));
-        option1.selectByValue("@@@@@@@@@@");
+        option1.selectByValue("ddddddddddddddddddddd");
         Thread.sleep(1000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#name"))).click();
         Select option2 = new Select(driver.findElement(By.cssSelector("#name")));
         option2.selectByValue("TDevxhub");
         Thread.sleep(1000);
-
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='filter_button setup']"))).click();
+        Thread.sleep(5000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/strong[1]"))).click();
-        Thread.sleep(2000);
-
-       driver.findElement(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/strong[1]")).click();
-        Thread.sleep(5000);
+        driver.findElement(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/strong[1]")).click();
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/strong[1]"))).click();
-        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/strong[1]"))).click();
-        Thread.sleep(2000);
-        //Dashboard
-         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]/strong[1]"))).click();
-         Thread.sleep(2000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).click();
-        Thread.sleep(2000);
-
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("kymari.kevian@alldrys.com");
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']"))).sendKeys(Keys.ENTER);
-        Thread.sleep(3000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Finish')]"))).sendKeys(Keys.ENTER);
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']"))).sendKeys(Keys.ENTER);
-        Thread.sleep(2000);
-
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/section/div[1]/div[2]/div/section/div[1]/div/div[1]/div[2]/button[2]/span"))).click();
-//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='checkmark']"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[5]/strong[1]"))).click();
 //        wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).click();
+
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/button[2]"))).sendKeys(Keys.ENTER);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/section[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]"))).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[1]/button[2]"))).click();
+        Thread.sleep(2000);
+
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("kymari.kevian@alldrys.com");
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']"))).sendKeys(Keys.ENTER);
+//        Thread.sleep(3000);
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(text(),'Finish')]"))).sendKeys(Keys.ENTER);
+//        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type='submit']"))).sendKeys(Keys.ENTER);
 //        Thread.sleep(2000);
+
+
     }
 }

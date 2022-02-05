@@ -1,10 +1,8 @@
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
@@ -20,12 +18,14 @@ public class pricing extends SetUp{
         // Javascript executor
         ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView (true);", n);
         driver.findElement(By.xpath("//button[contains(text(),'Pricing')]")).sendKeys(Keys.ENTER);
+        driver.findElement(By.xpath("//input[@type='text']")).sendKeys("69");
+
        Thread.sleep(3000);
 
 
-        //body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]
-        //Boolean Billing = driver.findElement(By.xpath("//button[contains(text(),'Pricing')]")).isDisplayed();
-       // Assert.assertEquals(Billing, true);
+        // body/div[@id='__nuxt']/div[@id='__layout']/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/input[1]
+        // Boolean Billing = driver.findElement(By.xpath("//button[contains(text(),'Pricing')]")).isDisplayed();
+        // Assert.assertEquals(Billing, true);
 
 
 //        driver.navigate().back();

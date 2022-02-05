@@ -2,7 +2,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,14 +10,14 @@ public class signUp extends SetUp {
 
     @Test
     public void singUp() throws InterruptedException {
-        driver.get("https://sharparchive.devxhub.com/");
+        driver.get("https://sharparchive.com/");
         wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).sendKeys(Keys.ENTER);
 
        wait.until(ExpectedConditions.elementToBeClickable(By.tagName("button"))).sendKeys(Keys.ENTER);
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='first_name']"))).sendKeys("Fardin");
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='last_name']"))).sendKeys("Arpon");
-        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("a1123@gmail.com");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']"))).sendKeys("a112@gmail.com");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#password"))).sendKeys("DevXhub12345@");
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#business_name"))).sendKeys("DevXHubzone");
         wait.until(ExpectedConditions.elementToBeClickable(By.tagName("select"))).click();
