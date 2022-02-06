@@ -18,6 +18,5 @@ public class signIn extends SetUp {
         //Successful show Login_home panel
         Thread.sleep(2000);
 
-
     }
 }

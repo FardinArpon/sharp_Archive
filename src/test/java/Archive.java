@@ -56,7 +56,7 @@ public class Archive extends SetUp {
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#group"))).click();
         Select option1 = new Select(driver.findElement(By.cssSelector("#group")));
-        option1.selectByValue("ddddddddddddddddddddd");
+        option1.selectByValue("new");
         Thread.sleep(1000);
 
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#name"))).click();
