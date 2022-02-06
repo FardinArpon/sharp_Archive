@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-Here I try to Automated Sharp Archive Web-automation test project. In this project work with Selenium Web-Driver, Juint test runner on java language.
+# Sharp Archive Web-Automation
+Here I try to Automated Sharp Archive Web-automation test project. This project worked with Selenium Web-Driver based on java language.
 
 **Technology:**
 Tool: selenium
@@ -18,24 +18,37 @@ Type this command:
 Gradle clean test
 Selenium will open the browser and start automation.
 
-**Tested features:**
+###Tested features: (positive Scenario)###
 
-**Get_Title,
-Sign_In,
-Sign_UP,
-Pricing,
-Industries,
-TryDemo,
-About & FAQ,
-Have Question and Suggestion,
-Take_Screen_shot,
-Home Feeds Cheek,
-Login_Home_Archive_All function CheekUp,**
+Get_Title
+Sign_In
+Sign_UP
+Pricing
+Industries
+TryDemo
+About & FAQ
+Have Question and Suggestion
+Take_Screen_shot
+Home Feeds Cheek
+Login_Home_Archive_All function CheekUp
+Archive page function automated
+Search page function automated
+Setting page function automated
+Help page
+Footer
+Elements Cheek
 
+###Tested features: (Negative_Scenario)###
 
-=======
-# Selenium_Junit_Java_sharp_Archive
-Web-automation test project. In this project work with Selenium Web-Driver, Juint test runner on java language.
+singin_with_WrongPassword
+singin_with_WrongMail
+wrong_singin_with_Invalid_Password(onlyAlphabet)
+wrong_Search_Neg
+Wrong_SingUp_The_field_is_required
+worng_singUp_Mail_Already_taken
+WrongSingUp_password_must_12_Charecter
+Wrong_archiveSeacrch
 
+**See The test Video**: SharpArchive Automation.mp4
 
->>>>>>> 10db45cebd473c6c4e7826be8737ec6fc9cbbad3
+GitHub Link: GitHub - devxhub-05/Sharp_Archive_Automation_Test
